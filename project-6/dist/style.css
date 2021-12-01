@@ -145,9 +145,3 @@ h3.loadingText {
 	from {transform: rotate(0deg);}
 	to {transform: rotate(359deg);}
 }
-
-@media only screen and (max-width: 650px) {
-	.container > div {
-		width: 100%;
-	}
-}

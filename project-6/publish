@@ -1,0 +1,10 @@
+rm -rf ./dist
+mkdir dist
+cp index.html ./dist
+cp style.css ./dist
+cp SupplyChain.json ./dist
+cp -R ./src ./dist
+
+hash=$(ipfs add -r -Q dist)
+echo $hash
+ipfs name publish $hash
